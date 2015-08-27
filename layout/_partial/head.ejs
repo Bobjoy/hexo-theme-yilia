@@ -29,4 +29,15 @@
     <link rel="icon" href="<%- config.favicon || theme.favicon %>">
   <% } %>
   <%- css('css/style') %>
+  <% if (theme.baidu_tongji) { %>
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?e582d6cf8ef4d5f1c611e598ad7823de";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  <% } %>
 </head>
